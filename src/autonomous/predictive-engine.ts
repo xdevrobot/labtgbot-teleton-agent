@@ -108,7 +108,7 @@ export class PredictiveEngine {
     const baseline = this.baselines.get(userId);
 
     if (!baseline) {
-      await this establishBaseline(userId);
+      await this.establishBaseline(userId);
       return [];
     }
 
